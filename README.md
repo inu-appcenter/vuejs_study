@@ -3,7 +3,7 @@
 ## installation & serve
 
 ``` bash
-npm i vue-cli -g
+npm i -g vue-cli
 vue init webpack-simple my-project
 cd my-project && npm i
 npm run dev

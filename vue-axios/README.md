@@ -1,18 +1,27 @@
 # vue-axios
 
-> A Vue.js project
+## 추가 의존성 설치
 
-## Build Setup
+- axios
+- babel-polyfill
+- es6-promise
+- event-source-polyfill
+- promise-polyfill
 
-``` bash
-# install dependencies
-npm install
+## promise
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
+``` javascript
+// webpack.config.js
+var path = require('path')
+var webpack = require('webpack')
+require('es6-promise').polyfill()
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## polyfill
+
+``` javascript
+// main.js
+import 'babel-polyfill'
+import 'event-source-polyfill'
+import 'promise-polyfill/src/polyfill'
+```

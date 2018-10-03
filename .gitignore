@@ -4,9 +4,6 @@ node_modules/
 LEGACY/
 *.cache
 
-vue-axios/
-vue-firebase/
-
 # Editor directories and files
 .idea
 *.log

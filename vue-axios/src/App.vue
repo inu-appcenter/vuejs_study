@@ -1,22 +1,12 @@
 <template>
   <div id="app">
-    <FetchUsers></FetchUsers>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import FetchUsers from './components/FetchUsers'
-
 export default {
-  name: 'app',
-  data () {
-    return {
-      users: [],
-    }
-  },
-  components: {
-    FetchUsers,
-  }
+  name: 'app'
 }
 </script>
 

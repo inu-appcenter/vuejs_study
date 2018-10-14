@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <router-link :to="'/about'">to About</router-link>
+    <p>Home page</p>
     <router-view></router-view>
     <FetchUsers></FetchUsers>
   </div>
@@ -8,6 +8,7 @@
 
 <script>
 import FetchUsers from '../components/FetchUsers'
+
 export default {
   name: 'home',
   components: {

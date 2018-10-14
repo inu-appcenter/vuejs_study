@@ -1,14 +1,12 @@
 <template>
   <div id="app">
-    <div v-for="user in users" :key="users.id">
-      <h1>{{ user.name }}</h1>
-      <p>{{ user.email }}</p>
-    </div>
-    <button @click="fetchUsers">Click me!</button>
+    <FetchUsers></FetchUsers>
   </div>
 </template>
 
 <script>
+import FetchUsers from './components/FetchUsers'
+
 export default {
   name: 'app',
   data () {
@@ -16,21 +14,15 @@ export default {
       users: [],
     }
   },
-  methods: {
-    fetchUsers: function() {
-      const baseURI = 'https://jsonplaceholder.typicode.com/users'
-      this.$http.get(baseURI)
-      .then((result) => {
-        this.users = result.data
-      })
-    }
+  components: {
+    FetchUsers,
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'avenir', helvetica, arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

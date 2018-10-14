@@ -1,7 +1,7 @@
 <template>
   <div id="home">
     <p>Home page</p>
-    <router-view></router-view>
+    <router-view class="router-view"></router-view>
     <FetchUsers></FetchUsers>
   </div>
 </template>
@@ -16,3 +16,7 @@ export default {
   }
 }
 </script>
+
+<style>
+
+</style>

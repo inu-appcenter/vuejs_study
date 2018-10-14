@@ -2,8 +2,8 @@
   <div id="navigation">
     <router-link
       v-for="(value, key) in menuList"
-      :key="key"
-      :to="value"
+      v-bind:key="key"
+      v-bind:to="value"
       :class="key.toLowerCase()"
     >{{ key }}</router-link>
   </div>

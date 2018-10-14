@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Navigation></Navigation>
-    <router-view></router-view>
+    <router-view class="router-view"></router-view>
   </div>
 </template>
 
@@ -41,6 +41,11 @@ li {
 }
 
 a {
+  cursor: pointer;
   color: #42b983;
+}
+
+.router-view {
+  border: 1px solid blue;
 }
 </style>

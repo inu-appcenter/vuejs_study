@@ -17,10 +17,10 @@ export default {
       menuList: {
         Home: '/',
         About: '/about',
-        Contact: '/contact'
-      }
+        Contact: '/contact',
+      },
     }
-  }
+  },
 }
 </script>
 

@@ -24,17 +24,17 @@ export default {
   computed: {
     hasResult: function () {
       return this.users.length < 1
-    }
+    },
   },
   methods: {
     fetchusers: function() {
-      const baseuri = 'https://jsonplaceholder.typicode.com/users'
-      this.$http.get(baseuri)
+      const baseURI = 'https://jsonplaceholder.typicode.com/users'
+      this.$http.get(baseURI)
       .then((result) => {
         this.users = result.data
       })
-    }
-  }
+    },
+  },
 }
 </script>
 

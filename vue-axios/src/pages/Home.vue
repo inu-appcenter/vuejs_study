@@ -12,8 +12,8 @@ import FetchUsers from '../components/FetchUsers'
 export default {
   name: 'home',
   components: {
-    FetchUsers
-  }
+    FetchUsers,
+  },
 }
 </script>
 

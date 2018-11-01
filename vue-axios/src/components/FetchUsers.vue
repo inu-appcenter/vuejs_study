@@ -1,15 +1,10 @@
 <template>
   <div id="fetchusers">
-    <div
-      v-for="user in users"
-      v-bind:key="users.id">
+    <div v-for="user in users" v-bind:key="users.id">
       <h1>{{ user.name }}</h1>
       <p>{{ user.email }}</p>
     </div>
-    <button
-      v-if="hasResult"
-      @click="fetchusers"
-    >click me!</button>
+    <button v-if="hasResult" @click="fetchusers">click me!</button>
   </div>
 </template>
 

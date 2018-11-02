@@ -3,6 +3,7 @@
     <p>Contact page</p>
     <button @click="start">Start Confetti</button>
     <button @click="stop">Stop Confetti</button>
+    <!-- 버튼에 할당된 온클릭 이벤트는 아래 메소드에 정의되어 있습니다 -->
     <br>
     <a @click="$router.go(-1)">Go Back</a>
   </div>

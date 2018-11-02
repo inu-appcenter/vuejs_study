@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <Navigation></Navigation>
+    <!-- 가장 부모 컴포넌트인 App.vue 에서 Navigation 컴포넌트를 불러왔기때문에,
+    모든 자식요소 (Home, Contact, About 등)에서 Navigation 컴포넌트가 보여집니다 -->
     <router-view class="router-view"></router-view>
   </div>
 </template>
